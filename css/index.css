@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Colors */
+
+.blue {
+  color: #0084ba;
+}
+.grey {
+  color: #8f8f8f;
+}
+.black {
+  color: black;
+}
+.white {
+  color: white;
+}
+.lgrey {
+  color: #818181;
+}
+
+/* fonts */
+
+.vibes {
+  font-family: "Great Vibes", cursive;
+}
+.roboto {
+  font-family: "Roboto Slab", serif;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.montserrat_bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.meb {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.monoton {
+  font-family: "Monoton", cursive;
+}
+
+/* Size */
+.r2 {
+  font-size: 2vw;
+}
+.r3 {
+  font-size: 3vw;
+}
+.r4 {
+  font-size: 4vw;
+}
+.r15 {
+  font-size: 15vw;
+}
+body {
+  background-color: black;
+}
+.main {
+  width: 100vw !important;
+  padding: 0px;
+}
+.container-fluid {
+  width: 100vw !important;
+}
+
+.back {
+  width: 100vw;
+  text-align: center;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  opacity: 0.11;
+  /* font-size: 9rem; */
+}
+
+header {
+  height: 50vh;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+}
+.logo {
+  width: 200px;
+}
+
+.burger {
+  border: none;
+  background: none;
+  max-width: 40px;
+}
+.firstpage {
+  text-align: center;
+  height: 100vh;
+}
+.btn {
+  border: 3px solid white;
+  background: none;
+  color: white;
+  border-radius: 90px;
+  padding: 15px 30px;
+}
+a {
+  text-decoration: none;
+  color: #0084ba;
+  text-emphasis: none;
+}
+
+.secondpage {
+  height: 100vh;
+  text-align: center;
+}
+mainpic {
+  max-width: fit-content;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.thirdpage {
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .r1 {
+    font-size: 1.7vw;
+  }
+  .r2 {
+    font-size: 2rem;
+  }
+  .r3 {
+    font-size: 3rem;
+  }
+  .r4 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 899px) {
+  .r2 {
+    font-size: 1.5rem;
+  }
+  .r3 {
+    font-size: 2rem;
+  }
+  .r4 {
+    font-size: 3rem;
+  }
+}
