@@ -61,15 +61,12 @@ body {
   background-color: black;
 }
 .main {
-  width: 100vw !important;
+  width: 100% !important;
   padding: 0px;
-}
-.container-fluid {
-  width: 100vw !important;
 }
 
 .back {
-  width: 100vw;
+  width: 100%;
   text-align: center;
   z-index: -1;
   position: absolute;
@@ -95,7 +92,7 @@ header {
 }
 .firstpage {
   text-align: center;
-  height: 100vh;
+  /* height: 120vh; */
 }
 .btn {
   border: 3px solid white;
@@ -111,11 +108,16 @@ a {
 }
 
 .secondpage {
-  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
+  overflow: hidden;
 }
-mainpic {
-  max-width: fit-content;
+.mainpic {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  /* max-width: 15vw; */
 }
 .right {
   display: flex;
@@ -151,3 +153,8 @@ mainpic {
     font-size: 3rem;
   }
 }
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
