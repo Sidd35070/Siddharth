@@ -98,18 +98,17 @@ header {
 }
 
 .btn {
-  border: 3px solid #0084ba;
+  border: 1px solid #0084ba;
   background: none;
-  color: white;
-  border-radius: 50px;
+  color: #0084ba;
+  /* color: white; */
+  /* border-radius: 50px; */
   padding: 10px 30px;
 }
-a {
-  text-decoration: none;
-  color: #0084ba;
-  text-emphasis: none;
+.btn:hover {
+  background-color: #0084ba;
+  color: white;
 }
-
 .mainpic {
   padding: 0px;
   margin: 0px;
@@ -130,7 +129,7 @@ a {
 .slip {
   padding: 20px;
   background-color: white;
-  box-shadow: 18px 18px 4px rgba(199, 199, 199, 0.54);
+  box-shadow: 10px 10px 4px rgba(199, 199, 199, 0.54);
 }
 .pocket {
   display: flex;
@@ -140,6 +139,9 @@ a {
 
 .experience {
   font-size: 13vw;
+}
+.certifications {
+  font-size: 9vw;
 }
 .exps {
   width: 70vw;
@@ -153,6 +155,30 @@ hr {
 }
 .exp {
   display: flex;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cert {
+  padding: 0px;
+  margin: 0px 10px 10px 0px;
+  background-color: white;
+  box-shadow: 6px 6px 4px rgba(199, 199, 199, 0.54);
+}
+.hidden {
+  display: block;
+}
+.unhide {
+  display: none;
+}
+.hidden {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.txt {
+  font-weight: 600;
 }
 
 @media (min-width: 900px) {
@@ -168,6 +194,10 @@ hr {
   .r4 {
     font-size: 4rem;
   }
+  .cards {
+    margin: auto;
+    width: 80vw;
+  }
 }
 @media (max-width: 899px) {
   .r2 {
@@ -178,6 +208,16 @@ hr {
   }
   .r4 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 770px) {
+  .hidden {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .unhide {
+    display: none;
   }
 }
 /* * {
