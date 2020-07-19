@@ -90,10 +90,13 @@ header {
   background: none;
   max-width: 40px;
 }
-.firstpage {
+.page {
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
-  /* height: 120vh; */
+  overflow: hidden;
 }
+
 .btn {
   border: 3px solid #0084ba;
   background: none;
@@ -107,12 +110,6 @@ a {
   text-emphasis: none;
 }
 
-.secondpage {
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  overflow: hidden;
-}
 .mainpic {
   padding: 0px;
   margin: 0px;
@@ -124,10 +121,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.thirdpage {
-  text-align: center;
-  overflow: hidden;
-}
+
 .row {
   display: flex;
   justify-content: space-evenly;
@@ -143,9 +137,22 @@ a {
   align-items: center;
   justify-content: space-around;
 }
-.fourthpage {
-  text-align: center;
-  overflow: hidden;
+
+.experience {
+  font-size: 13vw;
+}
+.exps {
+  width: 70vw;
+  margin: auto;
+}
+hr {
+  display: block;
+  height: 2px;
+  color: white;
+  background-color: rgb(94, 94, 94);
+}
+.exp {
+  display: flex;
 }
 
 @media (min-width: 900px) {
