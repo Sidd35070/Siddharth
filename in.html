@@ -67,7 +67,11 @@
         <div class="row">
           <div class="col-md-1"></div>
           <div class="left col-12 col-sm-4 black">
-            <img src="img/mainfaded.jpg" alt="sid" class="img-fluid mainpic" />
+            <img
+              src="./img/mainfaded.jpg"
+              alt="sid"
+              class="img-fluid mainpic"
+            />
           </div>
           <div class="right col-12 col-sm-6">
             <span class="vibes blue r3">Hello & Welcome</span>
@@ -117,15 +121,14 @@
         <br /><br />
         <div class="row">
           <!-- <div class="col-md-1"></div> -->
-          <div class="col-10 col-md-4 slip">
+          <div class="col-10 col-md-3 slip">
             <span class="blue r3 roboto"
               >Oftentimes <br />
               <span class="black">I Code...</span> </span
             ><br /><br />
             <span class="text grey roboto"
-              >Be it consoling myself while console-ing javascript or voidly
-              looping through loop() of arduino programming, I always find
-              coding to be the secret of a happy life.</span
+              >I'm often found consoling myself while console-ing javascript or
+              voidly looping through loop() of arduino programming.</span
             >
             <br /><br /><br />
             <div class="pocket">
@@ -137,8 +140,29 @@
               <img src="img/proud.png" alt="" />
             </div>
           </div>
+
+          <div class="col-10 col-md-3 slip">
+            <span class="blue r3 roboto"
+              >Othertimes <br />
+              <span class="black">I Speak...</span> </span
+            ><br /><br />
+            <span class="text grey roboto"
+              >"All the people in the house..."<br />
+              I love the odds of hundreds of eyes against a pair.</span
+            >
+            <br /><br /><br />
+            <div class="pocket">
+              <div class="button">
+                <a class="btn blue bttn" href="https://www.google.com"
+                  >Project</a
+                >
+              </div>
+              <img src="img/speaker.png" alt="" />
+            </div>
+          </div>
+
           <!-- <div class="col-md-2"></div> -->
-          <div class="col-10 col-md-4 slip">
+          <div class="col-10 col-md-3 slip">
             <span class="blue r3 roboto"
               >Sometimes <br />
               <span class="black">I Write...</span> </span
@@ -244,123 +268,94 @@
         </div>
         <br /><br /><br />
         <div class="row cards">
-          <div class="col-9 col-md-3 col-lg-2 cert">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
+          <div class="col-9 col-md-3 col-lg-3 cert">
+            <img
+              id="cert1"
+              class="card-img-top"
+              src="./img/c1.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
+              <h5 id="title1" class="card-title roboto">Google IT Support</h5>
+              <span id="company1" class="d-none">Google</span>
+              <a id="1" onclick="show(this.id)" class="btn">View</a>
             </div>
           </div>
-          <div class="col-9 col-md-3 col-lg-2 cert">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
+          <div class="col-9 col-md-3 col-lg-3 cert">
+            <img
+              id="cert2"
+              class="card-img-top"
+              src="./img/c2.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
+              <h5 id="title2" class="card-title roboto">
+                UI Framework: Bootstrap
+              </h5>
+              <span id="company2" class="d-none">The Hong Kong University</span>
+              <a id="2" onclick="show(this.id)" class="btn">View</a>
             </div>
           </div>
-          <div class="col-9 col-md-3 col-lg-2 cert">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
+          <div class="col-9 col-md-3 col-lg-3 cert">
+            <img
+              id="cert3"
+              class="card-img-top"
+              src="./img/c3.jpg"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
+              <h5 id="title3" class="card-title roboto">
+                Frontend Development
+              </h5>
+              <span id="company3" class="d-none"
+                >Johns Hopkins University.</span
+              >
+              <a id="3" onclick="show(this.id)" class="btn">View</a>
             </div>
           </div>
 
           <!-- mobile block view -->
 
-          <a class="btn hidden col-6" href="">Show All</a>
+          <a
+            class="btn hidden col-6"
+            target="_blank"
+            href="https://www.linkedin.com/in/siddharth-rai28/"
+            >View My LinkedIn</a
+          >
 
           <!-- mobile block view -->
+        </div>
+      </div>
 
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
-          <div class="col-9 col-md-3 col-lg-2 cert unhide">
-            <img class="card-img-top" src="img/c1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h5 class="card-title roboto">Google It Support</h5>
-              <!-- <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p> -->
-              <a href="#" class="btn">View</a>
-            </div>
-          </div>
+      <!-- Model -->
+
+      <div id="model" class="model">
+        <svg
+          id="cross"
+          width="44"
+          height="44"
+          viewBox="0 0 44 44"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 42.3051L42.3051 2.00003"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M1.3457 1.84723L41.6508 42.1523"
+            stroke="white"
+            stroke-width="3"
+          />
+        </svg>
+
+        <div class="img-box">
+          <img id="show" src="img/c2.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="captain">
+          <span id="main-captain" class="r3 roboto"></span>
+          <p class="r2">by <span id="secondary-captain"></span></p>
         </div>
       </div>
     </div>
@@ -398,6 +393,7 @@
         </div>
       </div>
     </div>
+
     <!-- Scripts -->
 
     <script
@@ -415,5 +411,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
