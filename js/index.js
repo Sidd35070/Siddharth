@@ -22,3 +22,29 @@ function show(data) {
     model.classList.remove("show");
   });
 }
+
+function navSlide() {
+  //using "".list li" here coz font awesome also has class link.
+  const links = document.querySelectorAll(".list li");
+  const burger = document.querySelector(".burger");
+  const linkContainer = document.querySelector(".links-container");
+
+  burger.addEventListener("click", () => {
+    //container slide
+    linkContainer.classList.toggle("links-active");
+
+    //Links animation
+    links.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = "navfade 1.5s ease forwards " + index / 7 + "s";
+      }
+    });
+    //burger animation
+    burger.classList.toggle("toggle");
+  });
+  //Animation
+}
+
+navSlide();
