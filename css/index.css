@@ -70,7 +70,7 @@ html {
 .back {
   width: 100%;
   text-align: center;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -35%);
@@ -97,16 +97,19 @@ header {
   top: 0%;
   right: 0%;
   z-index: 2;
-  opacity: 0;
+  display: none;
   transition: all 0.5s ease-in;
 }
 .links-active {
   /* transform: translateX(0vw); */
   /* transform: scaleX(100%); */
   width: 30vw;
-  opacity: 1;
+  display: block;
 }
 
+.name-text {
+  letter-spacing: 2px;
+}
 .list {
   height: 100vh;
   display: flex;
@@ -282,6 +285,9 @@ hr {
 .exp {
   display: flex;
 }
+.page-five {
+  background-image: url(../img/certifications-background.png);
+}
 .cards {
   display: flex;
   justify-content: space-evenly;
@@ -345,6 +351,13 @@ hr {
   font-weight: 600;
 }
 
+.page-six {
+  background-image: url("../img/story.png");
+}
+footer {
+  margin: 30px;
+}
+
 @media (min-width: 900px) {
   .logo {
     width: 200px;
@@ -375,8 +388,8 @@ hr {
   }
 
   .paths path:nth-child(2) {
-    stroke-dasharray: 380px;
-    stroke-dashoffset: 380px;
+    stroke-dasharray: 380;
+    stroke-dashoffset: 380;
     animation: animate 2s ease-out forwards 1s, whiten 2s ease-out forwards 3s;
   }
   .paths path:nth-child(3) {
@@ -476,6 +489,9 @@ hr {
   .logo {
     width: 150px;
   }
+  .mainpic {
+    width: 80vw;
+  }
   .btn-first {
     position: relative;
     bottom: 70px;
@@ -490,6 +506,21 @@ hr {
   .img-box img {
     width: 100vw;
     transform: translate(-50%, -70%);
+  }
+}
+
+@media (max-width: 400px) {
+  .r1 {
+    font-size: 3.7vw;
+  }
+  .r2 {
+    font-size: 2rem;
+  }
+  .r3 {
+    font-size: 3rem;
+  }
+  .r4 {
+    font-size: 2rem;
   }
 }
 /* * {
