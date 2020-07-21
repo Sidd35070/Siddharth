@@ -57,9 +57,10 @@
 .r15 {
   font-size: 15vw;
 }
-body {
-  background-color: black;
+body,
+html {
   overflow-x: hidden;
+  background-color: black;
 }
 .main {
   width: 100% !important;
@@ -84,27 +85,28 @@ header {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.logo {
-  width: 200px;
-}
 
 /* burger styling and animation */
 
 .links-container {
   height: 100vh;
-  width: 30vw;
+  width: 0vw;
   background-color: #0084ba;
   opacity: 0.98;
   position: absolute;
   top: 0%;
   right: 0%;
   z-index: 2;
-  transform: translateX(30vw);
-  transition: transform 0.5s ease-in;
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }
 .links-active {
-  transform: translateX(0vw);
+  /* transform: translateX(0vw); */
+  /* transform: scaleX(100%); */
+  width: 30vw;
+  opacity: 1;
 }
+
 .list {
   height: 100vh;
   display: flex;
@@ -134,6 +136,9 @@ header {
   align-items: flex-end;
   z-index: 3;
 }
+.toggle {
+  transition: trasform 1s ease;
+}
 .toggle .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
@@ -162,12 +167,14 @@ header {
     transform: translateX(0px);
   }
 }
+/* Burger animation ends  */
 
 .page {
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   text-align: center;
   overflow: hidden;
+  overflow-x: hidden;
 }
 .name {
   text-transform: uppercase;
@@ -217,6 +224,28 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.typing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type {
+  margin-left: 9px;
+}
+.type::after {
+  content: "|";
+  animation: blink 0.5s infinite ease-in-out;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .row {
@@ -317,6 +346,9 @@ hr {
 }
 
 @media (min-width: 900px) {
+  .logo {
+    width: 200px;
+  }
   .r1 {
     font-size: 1.7vw;
   }
@@ -345,71 +377,71 @@ hr {
   .paths path:nth-child(2) {
     stroke-dasharray: 380px;
     stroke-dashoffset: 380px;
-    animation: animate 2s ease-out forwards, whiten 2s ease-out forwards 3s;
+    animation: animate 2s ease-out forwards 1s, whiten 2s ease-out forwards 3s;
   }
   .paths path:nth-child(3) {
     stroke-dasharray: 175px;
     stroke-dashoffset: 175px;
-    animation: animate 2s ease forwards 0.3s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 1.3s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(4) {
     stroke-dasharray: 440px;
     stroke-dashoffset: 440px;
-    animation: animate 2s ease forwards 0.6s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 1.6s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(5) {
     stroke-dasharray: 440px;
     stroke-dashoffset: 440px;
-    animation: animate 2s ease forwards 0.9s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 1.9s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(6) {
     stroke-linecap: square;
     stroke-dasharray: 413px;
     stroke-dashoffset: 413px;
-    animation: animate 2s ease forwards 1.2s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 2.2s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(7) {
     stroke-dasharray: 378px;
     stroke-dashoffset: 378px;
-    animation: animate 2s ease forwards 1.5s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 2.5s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(8) {
     stroke-linecap: round;
 
     stroke-dasharray: 423px;
     stroke-dashoffset: 423px;
-    animation: animate 2s ease forwards 1.8s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 2.8s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(9) {
     stroke-linecap: square;
 
     stroke-dasharray: 260px;
     stroke-dashoffset: 260px;
-    animation: animate 2s ease forwards 2.1s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 3.1s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(10) {
     stroke-linecap: square;
 
     stroke-dasharray: 413;
     stroke-dashoffset: 413;
-    animation: animate 2s ease forwards 2.4s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 3.4s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(11) {
     stroke-linecap: round;
 
     stroke-dasharray: 423px;
     stroke-dashoffset: 423px;
-    animation: animate 2s ease forwards 2.7s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 3.7s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(12) {
     stroke-dasharray: 377px;
     stroke-dashoffset: 377px;
-    animation: animate 2s ease forwards 3s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 4s, whiten 2s ease forwards 3s;
   }
   .paths path:nth-child(13) {
     stroke-dasharray: 175px;
     stroke-dashoffset: 175px;
-    animation: animate 2s ease forwards 3.3s, whiten 2s ease forwards 3s;
+    animation: animate 2s ease forwards 4.3s, whiten 2s ease forwards 3s;
   }
 
   @keyframes animate {
@@ -424,6 +456,9 @@ hr {
   }
 }
 @media (max-width: 899px) {
+  .logo {
+    width: 200px;
+  }
   .r2 {
     font-size: 1.5rem;
   }
@@ -435,6 +470,16 @@ hr {
   }
 }
 @media (max-width: 770px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 150px;
+  }
+  .btn-first {
+    position: relative;
+    bottom: 70px;
+  }
   .glider {
     transform: translate(0%, -20%);
   }
