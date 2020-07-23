@@ -16,6 +16,7 @@ function show(data) {
   document.getElementById(
     "secondary-captain"
   ).innerHTML = document.getElementById("company" + data).innerHTML;
+  document.getElementById("model").classList.remove("hidden");
   document.getElementById("model").classList.add("show");
 
   var model = document.querySelector(".model");

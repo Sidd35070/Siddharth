@@ -3,6 +3,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.hidden {
+  display: none;
+}
 /* Colors */
 
 /* If something fucks up remove this shit  */
