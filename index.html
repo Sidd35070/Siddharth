@@ -18,13 +18,13 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="icon" href="./img/mainfaded.jpg" type="image/icon type" />
+    <link rel="icon" href="./img/siddharthrai.jpg" type="image/icon type" />
     <title>Siddharth Rai</title>
   </head>
   <body>
     <div class="container-fluid main">
       <!-- First page  -->
-      <div class="page">
+      <div class="page" id="home">
         <header>
           <nav class="navbar">
             <a href="#" class=""
@@ -43,18 +43,28 @@
         <div class="links-container">
           <ul class="list">
             <li class="link">
-              <span class="d-none d-md-block white r2 monoton name-text"
+              <span class="white r1 monoton name-text"
                 >Siddharth Rai</span
               >
             </li>
+            </li>
+
             <li class="link">
-              <a href="#" class="link-item r1 roboto">Home</a>
+              <a href="#home" class="link-item r1 roboto">Home</a>
             </li>
             <li class="link">
-              <a href="" class="link-item r1 roboto">Blog</a>
+              <a href="#About" class="link-item r1 roboto">About</a>
             </li>
             <li class="link">
-              <a href="" class="link-item r1 roboto">Projects</a>
+              <a href="#certifications" class="link-item r1 roboto"
+                >Certifications</a
+              >
+            </li>
+            <li class="link">
+              <a href="#experience" class="link-item r1 roboto">Experience</a>
+            </li>
+            <li class="link">
+              <a href="#story" class="link-item r1 roboto">My Story</a>
             </li>
           </ul>
         </div>
@@ -83,7 +93,8 @@
             class="link"
             ><i class="fab fa-instagram"></i></a
           ><br />
-          <a target="_blank" href="https://wa.me/919878790444" class="link"
+          
+          <a target="_blank" href="https://wa.me/919915697333" class="link"
             ><i class="fab fa-whatsapp"></i
           ></a>
         </div>
@@ -233,16 +244,18 @@
         </div>
         <br /><br />
 
-        <a class="btn col-6 col-md-3 btn-first" href="">Know More</a>
+        <a class="btn col-6 col-md-3 btn-first" href="#About">
+          Know More
+        </a>
       </div>
 
       <!-- First Page Ends  -->
-      <br /><br /><br />
+      <br /><br /><br /><br><br><br>
       <!-- Second Page Starts-->
 
-      <div class="page">
+      <div class="page" id="About">
         <!-- Headings -->
-        <div class="head montserrat_bold">
+        <div class="head montserrat_bold hidd">
           <span class="white r15 back meb">WHO AM I</span>
           <span class="blue r4">Who <span class="white">Am I</span> </span
           ><br />
@@ -266,7 +279,7 @@
         <!-- Left Section  -->
         <div class="row">
           <div class="col-md-1"></div>
-          <div class="left col-12 col-sm-4 black">
+          <div class="left col-12 col-sm-4 black hidd aleft">
             <img
               src="./img/siddharthrai.jpg"
               alt="Siddharth Rai"
@@ -274,7 +287,7 @@
             />
           </div>
           <!-- Right section  -->
-          <div class="right col-12 col-sm-6">
+          <div class="right col-12 col-sm-6 hidd aright">
             <span class="r1 grey roboto">
               I’m <br /><span class="white r2"> Siddharth Rai </span><br />
               third year undergraduate of <br />
@@ -296,7 +309,7 @@
       <!-- Third Page Starts -->
 
       <div class="page">
-        <div class="head1 montserrat_bold">
+        <div class="head1 montserrat_bold hidd">
           <span class="white back r15 meb">WHAT I DO</span>
           <span class="blue r4">What <span class="white">I Do</span> </span
           ><br />
@@ -323,21 +336,20 @@
 
         <div class="row">
           <!-- <div class="col-md-1"></div> -->
-          <div class="col-10 col-md-3 slip">
+          <div class="col-10 col-md-3 slip hidd abottom">
             <span class="blue r3 roboto"
               >Oftentimes <br />
               <span class="black">I Code...</span> </span
             ><br /><br />
             <span class="text grey roboto"
-              >I'm often found coding, be it consoling myself while console-ing
-              javascript or voidly looping through loop() of arduino
-              programming.</span
+              >I'm often found coding. Be it consoling myself while console-ing
+              javascript or voidly looping through loop() of .ino, I find coding to be the most engaging thing.</span
             >
             <br /><br /><br />
             <div class="pocket">
               <img src="./img/proud.png" alt="Coder Siddharth" />
 
-              <div class="button">
+              <div class="d-none button">
                 <a class="btn blue bttn" href="https://www.google.com"
                   >Project</a
                 >
@@ -345,14 +357,14 @@
             </div>
           </div>
 
-          <div class="col-10 col-md-3 slip">
+          <div class="col-10 col-md-3 slip hidd abottom">
             <span class="blue r3 roboto"
               >Othertimes <br />
               <span class="black">I Speak...</span> </span
             ><br /><br />
             <span class="text grey roboto"
               >"All the people in the house..."<br />
-              I love the odds of hundreds of eyes against a pair.</span
+              I love it when there are hundreds of pairs of eyes against a pair.</span
             >
             <br /><br /><br />
             <div class="pocket">
@@ -366,18 +378,18 @@
           </div>
 
           <!-- <div class="col-md-2"></div> -->
-          <div class="col-10 col-md-3 slip">
+          <div class="col-10 col-md-3 slip hidd abottom">
             <span class="blue r3 roboto"
               >Sometimes <br />
               <span class="black">I Write...</span> </span
             ><br /><br />
             <span class="text grey roboto"
               >Well, what can I say! My heart speaks loud. So whenever it
-              speaks, I write it, sometimes blog other times poems.</span
-            >
-            <br /><br /><br />
+              speaks, I write it, sometimes blog other times poem.</span
+            ><br>
+            <span class="grey">**Coming Soon**</span><br /><br />
             <div class="pocket">
-              <div class="button">
+              <div class="d-none button">
                 <a class="btn blue bttn" href="">My Blog</a>
               </div>
               <img src="./img/blogger.png" alt="Siddharth's Blog" />
@@ -386,9 +398,71 @@
         </div>
       </div>
       <br /><br /><br />
+      
 
-      <div class="page page-five">
-        <div class="head1 montserrat_bold">
+      <!-- Fourth Page -->
+
+      <div class="page page-four" id="experience">
+        <div class="head1 montserrat_bold  hidd">
+          <span class="white back meb experience">EXPERIENCE</span>
+          <span class="blue r4">Experience</span><br />
+          <svg
+            width="335"
+            height="22"
+            viewBox="0 0 335 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              y1="11.5"
+              x2="335"
+              y2="11.5"
+              stroke="white"
+              stroke-width="3"
+            />
+            <circle cx="164" cy="11" r="11" fill="#0084ba" />
+          </svg>
+        </div>
+        <br /><br />
+        <div class="exps">
+          <hr />
+          <div class="row">
+            <span class="col-md-4 r3 roboto white hidd aleft">CO-CEO</span>
+            <span class="col-md-4 grey roboto hidd aright"
+              >Worked as the Co-CEO of the student organization Sapphire
+              operational in Lovely Professional University with student
+              capacity over 25 thousand.</span
+            >
+          </div>
+          <hr />
+          <div class="row">
+            <span class="col-md-4 r3 roboto white hidd aleft">Public Speaker</span>
+            <span class="col-md-4 grey roboto hidd aright"
+              >State-level debator, currently working as an anchor and have
+              successfully hosted various events at the University level. In
+              love with mic and stage.
+            </span>
+          </div>
+          <hr />
+          <div class="row">
+            <span class="col-md-4 r3 roboto white hidd aleft">Developer</span>
+            <span class="col-md-4 grey roboto hidd aright"
+              >Well versed with various technologies used for web development
+              along with UI/UX. Have 3 years of experience in web
+              development.</span
+            >
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <!-- Fifth page  -->
+
+
+      <div class="page page-five" id="certifications">
+        <div class="head1 montserrat_bold hidd">
           <span class="white back meb certifications">CERTIFICATIONS</span>
           <span class="blue r4">Certifications</span><br />
           <svg
@@ -410,7 +484,7 @@
         </div>
         <br /><br /><br />
         <div class="row cards">
-          <div class="col-9 col-md-3 col-lg-3 cert">
+          <div class="col-9 col-md-3 col-lg-3 cert hidd abottom">
             <img
               id="cert1"
               class="card-img-top"
@@ -423,7 +497,7 @@
               <a id="1" onclick="show(this.id)" class="btn">View</a>
             </div>
           </div>
-          <div class="col-9 col-md-3 col-lg-3 cert">
+          <div class="col-9 col-md-3 col-lg-3 cert hidd abottom">
             <img
               id="cert2"
               class="card-img-top"
@@ -438,7 +512,7 @@
               <a id="2" onclick="show(this.id)" class="btn">View</a>
             </div>
           </div>
-          <div class="col-9 col-md-3 col-lg-3 cert">
+          <div class="col-9 col-md-3 col-lg-3 cert hidd abottom">
             <img
               id="cert3"
               class="card-img-top"
@@ -467,65 +541,6 @@
       </div>
       <br /><br /><br />
 
-      <!-- Fourth Page -->
-
-      <div class="page">
-        <div class="head1 montserrat_bold">
-          <span class="white back meb experience">EXPERIENCE</span>
-          <span class="blue r4">Experience</span><br />
-          <svg
-            width="335"
-            height="22"
-            viewBox="0 0 335 22"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              y1="11.5"
-              x2="335"
-              y2="11.5"
-              stroke="white"
-              stroke-width="3"
-            />
-            <circle cx="164" cy="11" r="11" fill="#0084ba" />
-          </svg>
-        </div>
-        <br /><br />
-        <div class="exps">
-          <hr />
-          <div class="row">
-            <span class="col-md-4 r3 roboto white">CO-CEO</span>
-            <span class="col-md-4 grey roboto"
-              >Worked as the Co-CEO of the student organization Sapphire
-              operational in Lovely Professional University with student
-              capacity over 25 thousand.</span
-            >
-          </div>
-          <hr />
-          <div class="row">
-            <span class="col-md-4 r3 roboto white">Public Speaker</span>
-            <span class="col-md-4 grey roboto"
-              >State-level debator, currently working as an anchor and have
-              successfully hosted various events at the University level. In
-              love with the mic and the stage.
-            </span>
-          </div>
-          <hr />
-          <div class="row">
-            <span class="col-md-4 r3 roboto white">Developer</span>
-            <span class="col-md-4 grey roboto"
-              >Well versed with various technologies used for web development
-              along with UI/UX. Have 3 years of experience in web
-              development.</span
-            >
-          </div>
-          <hr />
-        </div>
-      </div>
-
-      <br /><br /><br />
-
-      <!-- Fifth Page -->
 
       <!-- Model -->
 
@@ -551,11 +566,11 @@
         </svg>
 
         <div class="img-box">
-          <img id="show" src="img/c2.jpg" alt="" class="img-fluid" />
+          <img id="show" src="img/c2.jpg" alt="Coursera Certificate" class="img-fluid" />
         </div>
         <div class="captain">
           <span id="main-captain" class="r3 roboto"></span>
-          <p class="r2">by <span id="secondary-captain"></span></p>
+          <p class="r2"><span id="secondary-captain"></span></p>
         </div>
       </div>
 
@@ -563,8 +578,8 @@
 
       <!-- sixth page -->
 
-      <div class="page page-six">
-        <div class="head montserrat_bold">
+      <div class="page page-six" id="story">
+        <div class="head montserrat_bold hidd">
           <!-- <span class="white r15 back meb">MY STORY</span> -->
           <span class="blue r4">My <span class="white">Story</span> </span
           ><br />
@@ -588,13 +603,13 @@
         <br /><br /><br /><br />
         <div class="row">
           <!-- <div class="col-md-1"></div> -->
-          <div class="left col-12 col-sm-3">
+          <div class="left col-12 col-sm-3 hidd aleft">
             <span class="txt r3 white roboto">
               I’m still writing it. Maybe, someday over a cup of coffee with
               extra sugar.
             </span>
           </div>
-          <div class="right col-12 col-sm-12 col-md-5 col-lg-4 black">
+          <div class="right col-12 col-sm-12 col-md-5 col-lg-4 black hidd aright">
             <img
               src="./img/siddharth.jpg"
               alt="Siddharth Rai"
@@ -605,7 +620,7 @@
       </div>
 
       <footer>
-        <div class="grey poppins">Designed and coded by Siddharth Rai</div>
+        <div class="grey poppins">Designed and developed by Siddharth Rai</div>
         <div class="grey poppins">© 2020. SIDDHARTH RAI.</div>
       </footer>
     </div>

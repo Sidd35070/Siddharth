@@ -5,6 +5,65 @@
 }
 /* Colors */
 
+/* If something fucks up remove this shit  */
+.hidd {
+  opacity: 0;
+}
+.fade-in-element {
+  animation: fade-in ease 2s;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.8, 0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1, 1);
+  }
+}
+.fade-in-left {
+  animation: fade-in-l ease 2s;
+}
+@keyframes fade-in-l {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.8, 0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1, 1);
+  }
+}
+.fade-in-right {
+  animation: fade-in-r ease 2s;
+}
+@keyframes fade-in-r {
+  from {
+    opacity: 0;
+    transform: translateX(50px) scale(0.8, 0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px) scale(1, 1);
+  }
+}
+.fade-in-bottom {
+  animation: fade-in-b ease 2s;
+}
+@keyframes fade-in-b {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.8, 0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1, 1);
+  }
+}
+
+/* Till here  */
+
 .blue {
   color: #0084ba;
 }
@@ -90,23 +149,33 @@ header {
 
 .links-container {
   height: 100vh;
-  width: 0vw;
   background-color: #0084ba;
   opacity: 0.98;
   position: absolute;
   top: 0%;
   right: 0%;
   z-index: 2;
-  display: none;
-  transition: all 0.5s ease-in;
+  opacity: 0;
+  pointer-events: none;
 }
 .links-active {
   /* transform: translateX(0vw); */
   /* transform: scaleX(100%); */
-  width: 30vw;
-  display: block;
+  pointer-events: all;
+  animation: navfade 1s ease-in-out forwards;
 }
-
+@keyframes navfade {
+  from {
+    width: 0vw;
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    width: 30vw;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .name-text {
   letter-spacing: 2px;
 }
@@ -125,6 +194,7 @@ header {
   color: white;
   letter-spacing: 3px;
   font-family: "roboto";
+  white-space: nowrap;
 }
 
 .burger {
@@ -160,16 +230,6 @@ header {
   width: 25px;
 }
 
-@keyframes navfade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
 /* Burger animation ends  */
 
 .page {
@@ -257,6 +317,7 @@ header {
   margin-bottom: 20px;
 }
 .slip {
+  margin-top: 20px;
   padding: 20px;
   background-color: white;
   box-shadow: 12px 12px 36px #0084ba;
@@ -285,8 +346,14 @@ hr {
 .exp {
   display: flex;
 }
+.page-four {
+  background-image: url(../img/experience-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .page-five {
   background-image: url(../img/certifications-background.png);
+  background-size: cover;
 }
 .cards {
   display: flex;
@@ -356,6 +423,7 @@ hr {
 }
 footer {
   margin: 30px;
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -483,6 +551,18 @@ footer {
   }
 }
 @media (max-width: 770px) {
+  @keyframes navfade {
+    from {
+      width: 0vw;
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      width: 50vw;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
   body {
     overflow-x: hidden;
   }
@@ -507,9 +587,19 @@ footer {
     width: 100vw;
     transform: translate(-50%, -70%);
   }
+  #main-captain {
+    font-size: 2rem;
+  }
+  #secondary-captain {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
+  header {
+    height: 50vh;
+    background-image: url("../img/bg.png");
+  }
   .r1 {
     font-size: 3.7vw;
   }
